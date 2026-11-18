@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="600" height="700">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2EBDD"/>
+      <stop offset="60%" stop-color="#EBE2D2"/>
+      <stop offset="100%" stop-color="#DCD2E9" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="sageAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A3B18A"/>
+      <stop offset="100%" stop-color="#588157"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#252B27" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas with soft borders -->
+  <rect width="600" height="700" rx="36" fill="url(#bgGrad)"/>
+  <rect x="12" y="12" width="576" height="676" rx="28" fill="none" stroke="#FAF9F6" stroke-width="2" stroke-opacity="0.8"/>
+
+  <!-- Subtle organic background circles & grid -->
+  <circle cx="120" cy="140" r="180" fill="#A3B18A" fill-opacity="0.08"/>
+  <circle cx="500" cy="560" r="220" fill="#DCD2E9" fill-opacity="0.25"/>
+
+  <!-- Tech grid subtle watermark -->
+  <g stroke="#85877F" stroke-width="0.75" stroke-opacity="0.15" stroke-dasharray="3,3">
+    <line x1="60" y1="60" x2="540" y2="60"/>
+    <line x1="60" y1="180" x2="540" y2="180"/>
+    <line x1="60" y1="300" x2="540" y2="300"/>
+    <line x1="60" y1="420" x2="540" y2="420"/>
+    <line x1="60" y1="540" x2="540" y2="540"/>
+    <line x1="180" y1="60" x2="180" y2="640"/>
+    <line x1="300" y1="60" x2="300" y2="640"/>
+    <line x1="420" y1="60" x2="420" y2="640"/>
+  </g>
+
+  <!-- Aesthetic Central Silhouette / Frame -->
+  <g filter="url(#softShadow)">
+    <rect x="130" y="110" width="340" height="420" rx="170" fill="#FAF9F6"/>
+    <rect x="130" y="110" width="340" height="420" rx="170" fill="none" stroke="#A3B18A" stroke-width="2.5" stroke-opacity="0.5"/>
+  </g>
+
+  <!-- Abstract Editorial Stylized Silhouette -->
+  <!-- Head & Torso -->
+  <circle cx="300" cy="260" r="75" fill="#DCD2E9" fill-opacity="0.6"/>
+  <path d="M 200 460 C 200 370, 400 370, 400 460 Z" fill="#A3B18A" fill-opacity="0.45"/>
+  <circle cx="300" cy="250" r="62" fill="#252B27" fill-opacity="0.08"/>
+
+  <!-- Aesthetic Monogram Over Silhouette -->
+  <text x="300" y="272" font-family="'Playfair Display', Georgia, serif" font-size="64" font-weight="700" fill="#252B27" text-anchor="middle" letter-spacing="2">SS</text>
+  <text x="300" y="310" font-family="'DM Sans', sans-serif" font-size="13" font-weight="600" fill="#588157" text-anchor="middle" letter-spacing="3">SAKSHI SHETTY</text>
+
+  <!-- Creative & Technology Floating Emblems -->
+  <!-- Crochet/Yarn Loop Node -->
+  <g transform="translate(100, 290)">
+    <circle cx="30" cy="30" r="28" fill="#FAF9F6" filter="url(#softShadow)"/>
+    <circle cx="30" cy="30" r="28" fill="none" stroke="#DCD2E9" stroke-width="2"/>
+    <path d="M 22 36 C 18 24, 34 18, 38 28 C 42 38, 22 42, 36 40" fill="none" stroke="#A3B18A" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="36" cy="22" r="2" fill="#588157"/>
+  </g>
+
+  <!-- Code Tag Emblem -->
+  <g transform="translate(440, 240)">
+    <circle cx="30" cy="30" r="28" fill="#FAF9F6" filter="url(#softShadow)"/>
+    <circle cx="30" cy="30" r="28" fill="none" stroke="#A3B18A" stroke-width="2"/>
+    <text x="30" y="37" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" fill="#252B27" text-anchor="middle">&lt;/&gt;</text>
+  </g>
+
+  <!-- AI Sparkle Emblem -->
+  <g transform="translate(380, 470)">
+    <circle cx="28" cy="28" r="26" fill="#FAF9F6" filter="url(#softShadow)"/>
+    <circle cx="28" cy="28" r="26" fill="none" stroke="#DCD2E9" stroke-width="2"/>
+    <path d="M 28 16 L 31 25 L 40 28 L 31 31 L 28 40 L 25 31 L 16 28 L 25 25 Z" fill="#A3B18A"/>
+  </g>
+
+  <!-- Bottom Editorial Label Badge -->
+  <g transform="translate(150, 560)">
+    <rect width="300" height="66" rx="33" fill="#252B27"/>
+    <circle cx="36" cy="33" r="6" fill="#A3B18A">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="56" y="28" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#FAF9F6" letter-spacing="1.5">SAKSHI SHETTY</text>
+    <text x="56" y="47" font-family="'DM Sans', sans-serif" font-size="11.5" font-weight="400" fill="#A3B18A">AI/ML &amp; CSE • Alta School of Tech</text>
+  </g>
+</svg>

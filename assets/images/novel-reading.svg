@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="24" fill="#F2EBDD"/>
+  <!-- Open Book Art -->
+  <g transform="translate(40, 50)">
+    <!-- Book Pages -->
+    <path d="M 60 85 C 40 75, 10 75, 0 80 L 0 20 C 10 15, 40 15, 60 25 Z" fill="#FAF9F6" stroke="#252B27" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M 60 85 C 80 75, 110 75, 120 80 L 120 20 C 110 15, 80 15, 60 25 Z" fill="#FAF9F6" stroke="#252B27" stroke-width="2.5" stroke-linejoin="round"/>
+    
+    <!-- Spine Line -->
+    <line x1="60" y1="25" x2="60" y2="85" stroke="#A3B18A" stroke-width="3"/>
+    
+    <!-- Page text lines left -->
+    <line x1="12" y1="36" x2="48" y2="33" stroke="#85877F" stroke-width="2" stroke-linecap="round"/>
+    <line x1="12" y1="48" x2="48" y2="45" stroke="#85877F" stroke-width="2" stroke-linecap="round"/>
+    <line x1="12" y1="60" x2="44" y2="57" stroke="#85877F" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Page text lines right -->
+    <line x1="72" y1="33" x2="108" y2="36" stroke="#85877F" stroke-width="2" stroke-linecap="round"/>
+    <line x1="72" y1="45" x2="108" y2="48" stroke="#85877F" stroke-width="2" stroke-linecap="round"/>
+    <line x1="72" y1="57" x2="104" y2="60" stroke="#85877F" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Floating bookmark ribbon -->
+    <path d="M 60 25 Q 65 5, 80 8" fill="none" stroke="#DCD2E9" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
