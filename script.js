@@ -2,8 +2,20 @@ const menu = document.getElementById("menu");
 const nav = document.getElementById("nav");
 const topButton = document.getElementById("top");
 
-menu.addEventListener("click", () => nav.classList.toggle("open"));
-nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => nav.classList.remove("open")));
+menu.addEventListener("click", () => {
+  const isOpen = nav.classList.toggle("open");
+  menu.classList.toggle("open", isOpen);
+  menu.setAttribute("aria-expanded", isOpen ? "true" : "false");
+});
+
+nav.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+    menu.classList.remove("open");
+    menu.setAttribute("aria-expanded", "false");
+  });
+});
+
 document.getElementById("year").textContent = new Date().getFullYear();
 
 window.addEventListener("scroll", () => {
@@ -13,7 +25,11 @@ window.addEventListener("scroll", () => {
     if (window.scrollY >= section.offsetTop - 120) current = section.id;
   });
   nav.querySelectorAll("a").forEach(link => {
-    link.style.color = link.getAttribute("href") === "#" + current ? "#a78bfa" : "";
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
   });
 });
 
