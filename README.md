@@ -1,10 +1,10 @@
 # Sakshi Shetty — Personal Portfolio
 
-**Full Name:** Sakshi Shetty  
-**URN Number:** [Enter your URN]  
-**Semester:** [Enter your semester]  
-**Section:** [Enter your section]  
-**Subject:** Git and GitHub  
+Full Name: Sakshi Shetty  
+URN Number: E25B031539
+Semester: 3
+Section: A
+Subject: Git and GitHub  
 
 > **Note:** Please fill in your specific **URN Number**, **Semester**, and **Section** above where indicated by the placeholders.
 
